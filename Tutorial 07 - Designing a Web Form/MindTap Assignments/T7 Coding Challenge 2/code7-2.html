@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!--
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 7
+   Coding Challenge 2
+   
+   Author: Joshua Tiemens 
+   Date:   11/10/2020 
+   Filename: code7-2.html
+   -->
+   <meta charset="utf-8">
+   <title>Coding Challenge 7-2</title>
+   <link href="code7-2_forms.css" rel="stylesheet" />
+</head>
+<body>
+   <h1>Survey Questions</h1>
+   <form action="submit-survey.php" method="post">
+
+      <ol type="1">
+         <li>
+            How satisfied were you with the conference workshops?
+            <ol type="a">
+               <li>
+                  <input name="q1" id="q1a" type="radio" />
+                  <label for="q1">Very Satisfied</label>
+               </li>
+               <li>
+                 <input name="q1" id="q1b" type="radio" />
+                 <label for="q1">Satisfied</label>
+               </li>
+               <li>
+                 <input name="q1" id="q1c" type="radio" />
+                 <label for="q1">Dissatisfied</label>
+               </li>
+               <li>
+                 <input name="q1" id="q1d" type="radio" />
+                 <label for="q1">Very Dissatisfied</label>
+               </li>                 
+            </ol>
+         </li>
+         <li>
+            How satisfied were you with the conference speakers?
+            <ol type="a">
+               <li>
+                  <input name="q2" id="q2a" type="radio" />
+                  <label for="q2">Very Satisfied</label>
+               </li>
+               <li>
+                  <input name="q2" id="q2b" type="radio" />
+                  <label for="q2">Satisfied</label>
+               </li>
+               <li>
+                  <input name="q2" id="q2c" type="radio" />
+                  <label for="q2">Dissatisfied</label>
+               </li>
+               <li>
+                  <input name="q2" id="q2d" type="radio" />
+                  <label for="q2">Very Dissatisfied</label>
+               </li>                 
+            </ol>
+         </li>
+         <li>
+            How satisfied were you with the conference facilities?
+            <ol type="a">
+               <li>
+                  <input name="q3" id="q3a" type="radio" />
+                  <label for="q3">Very Satisfied</label>
+               </li>
+               <li>
+                  <input name="q3" id="q3b" type="radio" />
+                  <label for="q3">Satisfied</label>
+               </li>
+               <li>
+                  <input name="q3" id="q3c" type="radio" />
+                  <label for="q3">Dissatisfied</label>
+               </li>
+               <li>
+                  <input name="q3" id="q3d" type="radio" />
+                  <label for="q3">Very Dissatisfied</label>
+               </li>               
+            </ol>
+         </li>
+         <li>
+            <label>How likely are you to attend next year's conference?</label>
+            <div id="newRow">
+              very unlikely
+              <input name="q4" type="range"
+                value="5" step="1" min="1" max="10" />
+              very likely
+            </div>
+         </li> 
+         <li>
+           <label for="q5text">Provide any suggestions for the next conference:</label>
+           <textarea name="q5" id="q5text" placeholder="enter your suggestions here."></textarea>
+         </li>         
+      </ol>
+    </form>
+
+
+</body>
+</html>

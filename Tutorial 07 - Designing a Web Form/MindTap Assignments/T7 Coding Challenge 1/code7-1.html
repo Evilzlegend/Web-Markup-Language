@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!--
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 7
+   Coding Challenge 1
+   
+   Author: Joshua Tiemens  
+   Date: 11/10/2020   
+   Filename: code7-1.html
+   -->
+   <meta charset="utf-8">
+   <title>Coding Challenge 7-1</title>
+   <link href="code7-1_forms.css" rel="stylesheet" />
+   <script src="formsubmit.js"></script>
+
+</head>
+<body>
+   <h1>Enter User Account</h1>
+   <form action="login-script.php" method="post">
+     <fieldset id="login">
+       <legend>Enter Account Information</legend>
+
+
+       <div class="formRow">   
+       <label>Account Type</label>
+       <select id="acctype" name="accounttype" size="3">
+         <option value="type1">administrator</option>
+         <option value="type2">member</option>
+         <option value="type3">guest</option>
+        </select>
+        </div>
+
+        <div class="formRow">
+          <label for="username">Username</label>
+          <input name="user" id="username" type="text">
+        </div>
+
+        <div class="formRow">
+          <label for="password">Password</label>
+          <input name="pwd" id="password" type="text">
+        </div>
+      </fieldset>
+      
+        <input type="submit" value="Login" />
+    
+   </form>
+
+
+</body>
+</html>

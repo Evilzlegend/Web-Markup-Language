@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!--
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 7
+   Coding Challenge 3
+   
+   Author: Joshua Tiemens 
+   Date:   11/10/2020 
+   Filename: code7-3.html
+
+   regular expression pattern for credit card numbers:
+
+   ^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$
+
+   regular expression pattern for CSC numbers:
+
+   ^\d{3}$
+   -->
+   <meta charset="utf-8">
+   <title>Coding Challenge 7-3</title>
+   <link href="code7-3_forms.css" rel="stylesheet" />
+   <link href="code7-3_valid.css" rel="stylesheet" />
+   <script src="formsubmit.js"></script>
+</head>
+<body>
+   <h1>Payment Information</h1>
+   <form action="process-card.php" method="post">
+      <fieldset>
+         <select id="ccard" name="creditcard" required>
+           <option value="">Credit Card Type</option>
+           <option value="amex">American Express</option>
+           <option value="disc">Discover</option>
+           <option value="master">MasterCard</option>
+           <option value="visa">Visa</option>
+         </select>
+         
+         <label for="cname">Name</label>
+         <input id="cname" name="cardname" type="text" required/>
+         
+         <label for="cnum">Card Number</label>
+         <input type="text" name="cardnumber" id="cnum" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" required/>
+         
+         <select name="cardmonth" id="month">
+           <option value="">Month</option>
+           <option value="01">January (01)</option>
+           <option value="02">February (02)</option>
+           <option value="03">March (03)</option>
+           <option value="04">April (04)</option>
+           <option value="05">May (05)</option>
+           <option value="06">June (06)</option>
+           <option value="07">July (07)</option>
+           <option value="08">August (08)</option>
+           <option value="09">September (09)</option>
+           <option value="10">October (10)</option>
+           <option value="11">November (11)</option>
+           <option value="12">December (12)</option>        
+         </select>  
+         
+         <select name="cardyear" id="year">
+           <option value="">Year</option> 
+           <option value="2020">2020</option>
+           <option value="2021">2021</option>
+           <option value="2022">2022</option>
+           <option value="2023">2023</option>
+           <option value="2024">2024</option>       
+         </select>
+         
+         <label for="csc">CSC</label>
+         <input type="text" id="csc" name="cardcsc" maxlength="3" pattern="^\d{3}$" required />
+         <input type="submit" value="Submit Payment" />      
+      </fieldset>
+   </form>
+</body>
+</html>
