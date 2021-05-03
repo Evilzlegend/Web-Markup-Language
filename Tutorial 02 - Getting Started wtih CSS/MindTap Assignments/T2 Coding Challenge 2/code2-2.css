@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 2
+   Coding Challenge 2
+
+   Author: Joshua Tiemens
+   Date: 09/18/2020  
+   
+   Filename: code2-2.css
+
+*/
+/*HTML*/
+a {
+  color: ivory;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*Heading Styles*/
+header > h1 {
+  text-align: center;
+  font-family: Impact, sans-serif;
+  font-size: 3em;
+}
+
+/*article*/
+
+article > h1 {
+    font-size: 2em;
+    font-family: cursive;
+}
+
+
+/*Navigation*/
+nav > h1 {
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+    text-align: center;
+  }
+nav ul {
+    list-style-type: none;
+    line-height: 2em;
+}

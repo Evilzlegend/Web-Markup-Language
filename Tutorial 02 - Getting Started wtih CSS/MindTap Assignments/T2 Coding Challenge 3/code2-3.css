@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 2
+   Coding Challenge 3
+
+   Author: Joshua Tiemens
+   Date: 09/18/2020
+   
+   Filename: code2-3.css
+
+*/
+
+/*HTML*/
+html {
+  padding-left: 30px;
+  background-color: hsla(40,80%,75%,0.5);
+}
+
+/*Heading*/
+h1, h2 {
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/*Inline Images*/
+img {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+/*Paragraphs*/
+p {
+  font-size:1.4em;
+  text-indent: 1em;
+}
+p:first-of-type::first-line {
+text-indent: 0;
+}
+p::first-line {
+  font-variant: small-caps;
+}

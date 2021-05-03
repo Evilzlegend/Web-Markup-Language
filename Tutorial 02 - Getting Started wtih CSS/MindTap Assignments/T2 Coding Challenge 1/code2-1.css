@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 2
+   Coding Challenge 1
+
+   Author: Joshua Tiemens
+   Date:   09/06/2020
+   
+   Filename: code2-1.css
+
+*/
+
+/* HTML and Body Styles */
+
+/* Heading Styles */
+
+  h1 {
+    font-size: 3.5em;
+    line-height: 0em;
+  }
+
+h1, h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+/* Aside and Blockquote */
+
+blockquote {
+  color: hsl(30, 85%, 45%);
+  font-size: 1.5em;
+  }
+blockquote::first-letter{
+  font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  background-color: hsl(30,85%,45%)
+}
+
+
