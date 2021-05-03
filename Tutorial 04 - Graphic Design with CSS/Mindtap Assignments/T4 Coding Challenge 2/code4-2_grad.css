@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Coding Challenge 2
+
+   Author: Joshua Tiemens
+   Date:   10/19/2020
+   
+   Filename: code4-2_grad.css
+
+*/
+
+article {
+  box-shadow: inset 0px 0px 50px 20px;
+  border-radius: 150px;
+  background: url("landscape.png") bottom right / 100% no-repeat,
+              linear-gradient(165deg, black, rgb(0, 0, 200) 65%, rgb(211, 0, 55) 75%, orange, 80%, yellow 82%);
+}
+
+h1, h2 {
+  text-shadow: white -2px -2px 3px;
+}
+  
+p {
+  text-shadow: red 2px 2px 3px;
+}
