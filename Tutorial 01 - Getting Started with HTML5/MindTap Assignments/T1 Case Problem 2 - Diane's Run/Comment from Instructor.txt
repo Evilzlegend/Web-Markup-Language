@@ -1,0 +1,6 @@
+dr_index.html - line 61 - the <img> element should be inside the <header> 
+that's why the image doesn't fill the space. dr_info.html - line 35 should 
+be be a <time> element with a datetime attribute on it rather than an input. 
+The main content should be in <section> elements, which is why the text is 
+all crammed to the left. dr_faq.html - Looks like you forgot to remove some 
+extra text from the text file. Same issue with the <section>
